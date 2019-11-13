@@ -214,6 +214,21 @@ a:hover {
   width: 100%;
   height: 100%;
 }
+.content .case {
+  width: 100%;
+}
+.content .case > h3 {
+  width: 600px;
+  height: 60px;
+  background: url(img/case_bg.png) no-repeat center;
+  margin: 0 auto;
+  font-weight: 800;
+  font-size: 27px;
+  text-align: center;
+}
+.content .case ul li {
+  display: inline-block;
+}
 @media screen and (max-width: 1400px) {
   .content .header {
     position: relative;

@@ -13,7 +13,7 @@
 	<body>
 		<div class="content">
 			<div class="header">
-				<img src="css/img/banner_bg.png" alt="">
+				<img id="banner_bg" src="css/img/banner_bg.png" alt="">
 				<div class="nav">
 					<div class="logo">
 						<img src="img/logo.png" alt="">
@@ -51,7 +51,15 @@
 					</div>
 				</div>
 			</div>
-			<div class="cases"></div>
+			<div class="cases">
+				<h3>案例分享</h3>
+				<ul class="case_nav">
+					<li><a href="#">语言培训</a></li>
+					<li><a href="#">出国留学</a></li>
+					<li><a href="#">资格考试</a></li>
+					<li><a href="#">学历教育</a></li>
+				</ul>
+			</div>
 			<div class="news"></div>
 			<div class="contact"></div>
 			<div class="footer"></div>
@@ -64,6 +72,7 @@
 	    pagination: {
 	      el: '.swiper-pagination',
 	    },
-	  })        
+	  })       
+	   $('.header').css('height',$('#banner_bg').height());
 	  </script>
 </html>
