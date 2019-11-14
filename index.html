@@ -9,10 +9,11 @@
 		<script src="https://unpkg.com/swiper/js/swiper.js"> </script>  
 		<script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
 		<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/dot.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<div class="content">
-			<div class="header">
+			<div class="header" id="header">
 				<img id="banner_bg" src="css/img/banner_bg.png" alt="">
 				<div class="nav">
 					<div class="logo">
@@ -45,28 +46,193 @@
 					        <div class="swiper-slide">
 								<img src="img/banner2.png" >
 							</div>
+							<div class="swiper-slide">
+								<img src="img/banner2.png" >
+							</div>
+							<div class="swiper-slide">
+								<img src="img/banner2.png" >
+							</div>
 					    </div>
 					    <!-- 如果需要分页器 -->
 					    <div class="swiper-pagination"></div>
 					</div>
 				</div>
 			</div>
-			<div class="cases">
+			<div class="cases" id="cases">
 				<h3>案例分享</h3>
 				<ul class="case_nav">
-					<li><a href="#">语言培训</a></li>
-					<li><a href="#">出国留学</a></li>
-					<li><a href="#">资格考试</a></li>
-					<li><a href="#">学历教育</a></li>
+					<li class="active">语言培训</li>
+					<li>出国留学</li>
+					<li>资格考试</li>
+					<li>学历教育</li>
+				</ul>
+				<ul class="case_detail">
+					<li class="active" index="0">
+						<img src="img/cases.png" >
+					</li>
+					<li index="1">
+						<img src="img/cases1.png" >
+					</li>
+					<li index="2">
+						<img src="img/cases.png" >
+					</li>
+					<li index="3">
+						<img src="img/cases1.png" >
+					</li>
 				</ul>
 			</div>
-			<div class="news"></div>
-			<div class="contact"></div>
-			<div class="footer"></div>
+			<div class="news" id="news">
+				<h3>新闻动态</h3>
+				<ul class="news_list">
+					<li>
+						<a href="#">
+							<img src="img/news_banner.png" >
+							<div class="dot">
+								<h4>11.1号百度重磅上线知了好学产品</h4>
+								<p>产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述</p>
+								<span>2019-10-10</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/news_banner.png" >
+							<div class="dot">
+								<h4>11.1号百度重磅上线知了好学产品</h4>
+								<p>产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述</p>								
+								<span>2019-10-10</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/news_banner.png" >
+							<div class="dot">
+								<h4>11.1号百度重磅上线知了好学产品</h4>
+								<p>产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述</p>
+								<span>2019-10-10</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/news_banner.png" >
+							<div class="dot">
+								<h4>11.1号百度重磅上线知了好学产品</h4>
+								<p>产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述</p>
+								<span>2019-10-10</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/news_banner.png" >
+							<div class="dot">
+								<h4>11.1号百度重磅上线知了好学产品</h4>
+								<p>产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述</p>
+								<span>2019-10-10</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/news_banner.png" >
+							<div class="dot">
+								<h4>11.1号百度重磅上线知了好学产品</h4>
+								<p>产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述产品描述</p>
+								<span>2019-10-10</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="contact" id="contact">
+				<h3>联系我们</h3>
+				<ul>
+					<li class="contact1">
+						<div>
+							<div class="bg">
+								<img src="img/contact1.png" >
+							</div>
+							<div class="text">
+								<p>01</p>
+								<p>华北地区</p>
+							</div>
+						</div>
+					</li>
+					<li class="contact2">
+						<div>
+							<div class="text">
+								<p>02</p>
+								<p>华南地区</p>
+							</div>
+							<div class="bg">
+								<img src="img/contact3.png" >
+								<div class="bg_text">
+									<p>上学说华南事业部</p>
+									<p>联系人：李斌</p>
+									<p>电话：18616452292</p>
+									<p><b>地址：</b><span>北京市昌平区振兴路乐华仕健康产业园8栋3层</span></p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="contact3">
+						<div>
+							<div class="bg">
+								<img src="img/contact2.png" >
+							</div>
+							<div class="text">
+								<p>03</p>
+								<p>华中地区</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="footer">
+				<div class="footer_content">
+					<ul class="link">
+						<li><a href="#">关于我们</a></li>
+						<li><a href="#cases">案例分享</a></li>
+						<li><a href="#news">新闻动态</a></li>
+						<li><a href="#header">入驻知了</a></li>
+					</ul>
+					<ul class="info">
+						<li class="location">
+							<span class="icon"></span>
+							<span class="info_text">
+								北京市昌平区振兴路乐华仕健康产业园8栋3层
+							</span>
+						</li>
+						<li class="phone">
+							<span class="icon"></span>
+							<span class="info_text">
+								18616452292
+							</span>
+						</li>
+						<li class="email">
+							<span class="icon"></span>
+							<span class="info_text">
+								361697735@qq.com
+							</span>
+						</li>
+					</ul>
+					<p class="copyRight">
+						版权所有：Copyright©2015 Zoom Interactive Co,Ltd All rights reserved 京ICP备120044404号
+					</p>
+					<div class="footer_logo">
+						<img src="img/footer_logo.png" >
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 	<script>        
 	  var mySwiper = new Swiper ('.swiper-container', {
+		  autoplay: {
+			  disableOnInteraction: false,
+		  },
 	    loop: true, // 循环模式选项
 	    // 如果需要分页器
 	    pagination: {
@@ -74,5 +240,13 @@
 	    },
 	  })       
 	   $('.header').css('height',$('#banner_bg').height());
+	   $('.case_nav li').on('click',function(){
+		   $('.case_nav .active').removeClass('active');
+		   $(this).addClass('active');
+		   $('.case_detail .active').removeClass('active');
+		   var index = $(this).index();
+		    $('.case_detail li').eq(index).addClass('active');
+	   });
+	   $('.dot').dotdotdot();
 	  </script>
 </html>
