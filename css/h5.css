@@ -166,6 +166,8 @@ a:hover {
 .content .header .nav ul {
   float: right;
   margin-top: 0.15rem;
+  position: relative;
+  z-index: 10000;
 }
 .content .header .nav ul li {
   display: inline-block;
